@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 ///
 /// Enumation of available BlaBlaCar countries
 ///
@@ -29,7 +31,9 @@ class Location {
   @override
   bool operator ==(Object other) {
     if (identical(this, other)) return true;
-    return other is Location && other.name == name && other.country == country;
+    return other is Location 
+    && other.name == name 
+    && other.country == country;
   }
 
   @override
